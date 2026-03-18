@@ -1,0 +1,2212 @@
+case,prompt,t1ce_montage_path,pred_montage_path
+222,"Patient ID: 222
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(2287)}
+- edema: {'volume_mm3': np.int64(19594)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(21881)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 89, 64, 140, 64, 103)
+
+Region Summary:
+- core: {'components': np.int64(88), 'center_of_mass': (64, 88, 61128115435068, 64, 137, 2579798863138, 64, 108, 71534761696546), 'max_cross_sectional_area_voxels': np.int64(13950)}
+- edema: {'components': np.int64(35), 'center_of_mass': (64, 91, 42416045728284, 64, 141, 80126569358, 64, 101, 44462590588955), 'max_cross_sectional_area_voxels': np.int64(93280)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(949)}
+- edema: {'volume_mm3': np.int64(15216)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(16165)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 88, 64, 139, 64, 79)
+
+Region Summary:
+- core: {'components': np.int64(1), 'center_of_mass': (64, 92, 7903055848261, 64, 136, 19704952581665, 64, 86, 2118018967334), 'max_cross_sectional_area_voxels': np.int64(3375)}
+- edema: {'components': np.int64(2), 'center_of_mass': (64, 88, 1972923238696, 64, 139, 56309148264984, 64, 78, 7893007360673), 'max_cross_sectional_area_voxels': np.int64(46648)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/222_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/222_prediction_montage.png
+210,"Patient ID: 210
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(15982)}
+- edema: {'volume_mm3': np.int64(112303)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(128285)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 139, 64, 97, 64, 89)
+
+Region Summary:
+- core: {'components': np.int64(336), 'center_of_mass': (64, 132, 7905143286197, 64, 99, 25359779752222, 64, 84, 53435114503817), 'max_cross_sectional_area_voxels': np.int64(64925)}
+- edema: {'components': np.int64(67), 'center_of_mass': (64, 144, 486273741574, 64, 97, 88669047131421, 64, 90, 2797699081948), 'max_cross_sectional_area_voxels': np.int64(622440)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(39416)}
+- edema: {'volume_mm3': np.int64(166849)}
+- enhancing: {'volume_mm3': np.int64(2345)}
+- total: {'volume_mm3': np.int64(208610)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 138, 64, 97, 64, 67)
+
+Region Summary:
+- core: {'components': np.int64(4), 'center_of_mass': (64, 136, 3737061091942, 64, 99, 8615790541912, 64, 66, 51918002841485), 'max_cross_sectional_area_voxels': np.int64(147735)}
+- edema: {'components': np.int64(8), 'center_of_mass': (64, 139, 440098532206, 64, 96, 30271083434722, 64, 67, 6093533674161), 'max_cross_sectional_area_voxels': np.int64(600270)}
+- enhancing: {'components': np.int64(7), 'center_of_mass': (64, 140, 63539445629, 64, 116, 34157782515992, 64, 73, 36631130063967), 'max_cross_sectional_area_voxels': np.int64(10166)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/210_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/210_prediction_montage.png
+26,"Patient ID: 26
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(11237)}
+- edema: {'volume_mm3': np.int64(145705)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(156942)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 94, 64, 101, 64, 73)
+
+Region Summary:
+- core: {'components': np.int64(236), 'center_of_mass': (64, 82, 91261012725816, 64, 97, 14131885734626, 64, 56, 36789178606389), 'max_cross_sectional_area_voxels': np.int64(32640)}
+- edema: {'components': np.int64(87), 'center_of_mass': (64, 95, 39673998833258, 64, 101, 67652448440342, 64, 76, 5608592704436), 'max_cross_sectional_area_voxels': np.int64(573540)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(20)}
+- edema: {'volume_mm3': np.int64(43731)}
+- enhancing: {'volume_mm3': np.int64(12830)}
+- total: {'volume_mm3': np.int64(56581)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 89, 64, 98, 64, 39)
+
+Region Summary:
+- core: {'components': np.int64(3), 'center_of_mass': (64, 89, 0, 64, 90, 9, 64, 35, 7), 'max_cross_sectional_area_voxels': np.int64(24)}
+- edema: {'components': np.int64(7), 'center_of_mass': (64, 91, 45315679952436, 64, 96, 12672932244861, 64, 40, 6809814548032), 'max_cross_sectional_area_voxels': np.int64(184690)}
+- enhancing: {'components': np.int64(8), 'center_of_mass': (64, 79, 46258768511302, 64, 106, 42868277474669, 64, 34, 609742790335154), 'max_cross_sectional_area_voxels': np.int64(27900)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/026_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/026_prediction_montage.png
+125,"Patient ID: 125
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(4073)}
+- edema: {'volume_mm3': np.int64(115349)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(119422)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 96, 64, 138, 64, 101)
+
+Region Summary:
+- core: {'components': np.int64(68), 'center_of_mass': (64, 104, 73950405106801, 64, 137, 1013994598576, 64, 105, 56960471397), 'max_cross_sectional_area_voxels': np.int64(21840)}
+- edema: {'components': np.int64(17), 'center_of_mass': (64, 93, 96801012579216, 64, 136, 80750591682633, 64, 102, 2071972882297), 'max_cross_sectional_area_voxels': np.int64(444478)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(18838)}
+- edema: {'volume_mm3': np.int64(54639)}
+- enhancing: {'volume_mm3': np.int64(17066)}
+- total: {'volume_mm3': np.int64(90543)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 97, 64, 138, 64, 76)
+
+Region Summary:
+- core: {'components': np.int64(11), 'center_of_mass': (64, 99, 37026223590615, 64, 132, 77609088013588, 64, 81, 40259050854655), 'max_cross_sectional_area_voxels': np.int64(128800)}
+- edema: {'components': np.int64(27), 'center_of_mass': (64, 95, 45053899229488, 64, 137, 34867036365966, 64, 75, 5340507695968), 'max_cross_sectional_area_voxels': np.int64(266490)}
+- enhancing: {'components': np.int64(4), 'center_of_mass': (64, 101, 64045470526193, 64, 144, 9234735731866, 64, 72, 46115082620415), 'max_cross_sectional_area_voxels': np.int64(47396)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/125_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/125_prediction_montage.png
+143,"Patient ID: 143
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(51737)}
+- edema: {'volume_mm3': np.int64(23689)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(75426)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 143, 64, 90, 64, 82)
+
+Region Summary:
+- core: {'components': np.int64(808), 'center_of_mass': (64, 144, 73960608462028, 64, 88, 9208690105727, 64, 81, 5263157894737), 'max_cross_sectional_area_voxels': np.int64(201666)}
+- edema: {'components': np.int64(413), 'center_of_mass': (64, 133, 98370551732873, 64, 88, 2196378065769, 64, 92, 87369665245473), 'max_cross_sectional_area_voxels': np.int64(290816)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(65811)}
+- edema: {'volume_mm3': np.int64(62638)}
+- enhancing: {'volume_mm3': np.int64(3764)}
+- total: {'volume_mm3': np.int64(132213)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 141, 64, 96, 64, 58)
+
+Region Summary:
+- core: {'components': np.int64(4), 'center_of_mass': (64, 141, 1531962741791, 64, 94, 2805002203279, 64, 59, 7819361504916), 'max_cross_sectional_area_voxels': np.int64(233227)}
+- edema: {'components': np.int64(17), 'center_of_mass': (64, 142, 3774386155369, 64, 97, 89975733580255, 64, 56, 10053002969443), 'max_cross_sectional_area_voxels': np.int64(361425)}
+- enhancing: {'components': np.int64(10), 'center_of_mass': (64, 128, 4643995749203, 64, 103, 52550478214665, 64, 67, 30951115834219), 'max_cross_sectional_area_voxels': np.int64(23940)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/143_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/143_prediction_montage.png
+40,"Patient ID: 40
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(20192)}
+- edema: {'volume_mm3': np.int64(123059)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(143251)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Bilateral
+- approx_center_voxel: (64, 129, 64, 71, 64, 61)
+
+Region Summary:
+- core: {'components': np.int64(183), 'center_of_mass': (64, 124, 97910063391443, 64, 72, 75723058637084, 64, 52, 73197305863708), 'max_cross_sectional_area_voxels': np.int64(73458)}
+- edema: {'components': np.int64(100), 'center_of_mass': (64, 130, 60466930496753, 64, 70, 1757612202277, 64, 64, 70536896935616), 'max_cross_sectional_area_voxels': np.int64(614008)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Bilateral hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(60733)}
+- edema: {'volume_mm3': np.int64(71311)}
+- enhancing: {'volume_mm3': np.int64(1236)}
+- total: {'volume_mm3': np.int64(133280)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Bilateral
+- approx_center_voxel: (64, 129, 64, 70, 64, 39)
+
+Region Summary:
+- core: {'components': np.int64(4), 'center_of_mass': (64, 129, 76630497423147, 64, 72, 93036734559465, 64, 36, 37047404211878), 'max_cross_sectional_area_voxels': np.int64(245916)}
+- edema: {'components': np.int64(22), 'center_of_mass': (64, 128, 9938438670051, 64, 67, 13480388719833, 64, 41, 527015467459435), 'max_cross_sectional_area_voxels': np.int64(434808)}
+- enhancing: {'components': np.int64(35), 'center_of_mass': (64, 126, 3915857605178, 64, 77, 20954692556634, 64, 30, 5873786407767), 'max_cross_sectional_area_voxels': np.int64(2002)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Bilateral hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/040_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/040_prediction_montage.png
+17,"Patient ID: 17
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(7491)}
+- edema: {'volume_mm3': np.int64(86045)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(93536)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 160, 64, 141, 64, 77)
+
+Region Summary:
+- core: {'components': np.int64(309), 'center_of_mass': (64, 174, 31290882392204, 64, 133, 6888265919103, 64, 69, 800961153384), 'max_cross_sectional_area_voxels': np.int64(44660)}
+- edema: {'components': np.int64(52), 'center_of_mass': (64, 158, 62409204486, 64, 142, 13232610843164, 64, 77, 57681445755128), 'max_cross_sectional_area_voxels': np.int64(384888)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(1539)}
+- edema: {'volume_mm3': np.int64(47181)}
+- enhancing: {'volume_mm3': np.int64(21859)}
+- total: {'volume_mm3': np.int64(70579)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 159, 64, 141, 64, 55)
+
+Region Summary:
+- core: {'components': np.int64(11), 'center_of_mass': (64, 169, 5912930474334, 64, 132, 20077972709552, 64, 49, 92527615334633), 'max_cross_sectional_area_voxels': np.int64(8550)}
+- edema: {'components': np.int64(12), 'center_of_mass': (64, 157, 58195036137428, 64, 145, 1718700324283, 64, 57, 78364172018397), 'max_cross_sectional_area_voxels': np.int64(255024)}
+- enhancing: {'components': np.int64(8), 'center_of_mass': (64, 161, 3714259572716, 64, 134, 26991170685, 64, 50, 11848666453176), 'max_cross_sectional_area_voxels': np.int64(117077)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/017_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/017_prediction_montage.png
+67,"Patient ID: 67
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(13856)}
+- edema: {'volume_mm3': np.int64(85940)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(99796)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 143, 64, 162, 64, 94)
+
+Region Summary:
+- core: {'components': np.int64(316), 'center_of_mass': (64, 144, 46853348729792, 64, 172, 3769486143187, 64, 106, 3125721709007), 'max_cross_sectional_area_voxels': np.int64(62244)}
+- edema: {'components': np.int64(95), 'center_of_mass': (64, 143, 50508494298347, 64, 155, 56897835699326, 64, 88, 96110076797765), 'max_cross_sectional_area_voxels': np.int64(526240)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(1843)}
+- edema: {'volume_mm3': np.int64(40490)}
+- enhancing: {'volume_mm3': np.int64(34013)}
+- total: {'volume_mm3': np.int64(76346)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 142, 64, 172, 64, 73)
+
+Region Summary:
+- core: {'components': np.int64(9), 'center_of_mass': (64, 135, 82799782962562, 64, 176, 255018990776, 64, 85, 6212696690179), 'max_cross_sectional_area_voxels': np.int64(10350)}
+- edema: {'components': np.int64(16), 'center_of_mass': (64, 143, 50560632254877, 64, 169, 9567794517164, 64, 69, 86986910348234), 'max_cross_sectional_area_voxels': np.int64(166656)}
+- enhancing: {'components': np.int64(2), 'center_of_mass': (64, 139, 50042630758827, 64, 175, 655925675477, 64, 76, 2226501631729), 'max_cross_sectional_area_voxels': np.int64(86632)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/067_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/067_prediction_montage.png
+328,"Patient ID: 328
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(189152)}
+- edema: {'volume_mm3': np.int64(171595)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(360747)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 104, 64, 96, 64, 83)
+
+Region Summary:
+- core: {'components': np.int64(19), 'center_of_mass': (64, 103, 50191380477077, 64, 82, 27429791913382, 64, 87, 19061918457113), 'max_cross_sectional_area_voxels': np.int64(575244)}
+- edema: {'components': np.int64(45), 'center_of_mass': (64, 103, 98788426236196, 64, 111, 14232932194994, 64, 78, 61778606602756), 'max_cross_sectional_area_voxels': np.int64(1050192)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(0)}
+- edema: {'volume_mm3': np.int64(0)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(0)}
+
+Presence of Classes:
+- core: False
+- edema: False
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 9223372036854775808, 64, 9223372036854775808, 64, 9223372036854775808)
+
+Region Summary:
+- core: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+- edema: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: nan
+- contrast_enhancement: nan
+- irregularity: nan
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/328_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/328_prediction_montage.png
+285,"Patient ID: 285
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(74556)}
+- edema: {'volume_mm3': np.int64(31120)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(105676)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 137, 64, 96, 64, 93)
+
+Region Summary:
+- core: {'components': np.int64(10), 'center_of_mass': (64, 137, 94779762862814, 64, 96, 80759429153925, 64, 92, 81891464134343), 'max_cross_sectional_area_voxels': np.int64(211680)}
+- edema: {'components': np.int64(52), 'center_of_mass': (64, 134, 410411311054, 64, 97, 78374035989717, 64, 90, 45803341902314), 'max_cross_sectional_area_voxels': np.int64(384475)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(75956)}
+- edema: {'volume_mm3': np.int64(62049)}
+- enhancing: {'volume_mm3': np.int64(108)}
+- total: {'volume_mm3': np.int64(138113)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 136, 64, 95, 64, 71)
+
+Region Summary:
+- core: {'components': np.int64(1), 'center_of_mass': (64, 137, 55363631576176, 64, 95, 36692295539522, 64, 70, 26311285481069), 'max_cross_sectional_area_voxels': np.int64(200640)}
+- edema: {'components': np.int64(26), 'center_of_mass': (64, 134, 34785411529597, 64, 95, 34350271559573, 64, 71, 83894986220568), 'max_cross_sectional_area_voxels': np.int64(369720)}
+- enhancing: {'components': np.int64(17), 'center_of_mass': (64, 142, 24074074074073, 64, 75, 9074074074074, 64, 87, 42592592592592), 'max_cross_sectional_area_voxels': np.int64(48)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/285_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/285_prediction_montage.png
+335,"Patient ID: 335
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(60154)}
+- edema: {'volume_mm3': np.int64(76180)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(136334)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 145, 64, 102, 64, 72)
+
+Region Summary:
+- core: {'components': np.int64(1), 'center_of_mass': (64, 148, 99456395252187, 64, 98, 26706453436181, 64, 76, 17189214349835), 'max_cross_sectional_area_voxels': np.int64(181048)}
+- edema: {'components': np.int64(32), 'center_of_mass': (64, 141, 9238382777632, 64, 105, 7403255447624, 64, 68, 59905487004463), 'max_cross_sectional_area_voxels': np.int64(491400)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(0)}
+- edema: {'volume_mm3': np.int64(533)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(533)}
+
+Presence of Classes:
+- core: False
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Bilateral
+- approx_center_voxel: (64, 113, 64, 154, 64, 34)
+
+Region Summary:
+- core: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+- edema: {'components': np.int64(2), 'center_of_mass': (64, 112, 65853658536585, 64, 154, 19324577861164, 64, 34, 4671669793621), 'max_cross_sectional_area_voxels': np.int64(880)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: nan
+- laterality: Bilateral hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/335_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/335_prediction_montage.png
+95,"Patient ID: 95
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(14829)}
+- edema: {'volume_mm3': np.int64(70390)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(85219)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Bilateral
+- approx_center_voxel: (64, 113, 64, 99, 64, 100)
+
+Region Summary:
+- core: {'components': np.int64(512), 'center_of_mass': (64, 120, 6469755209387, 64, 106, 10567131971138, 64, 93, 65290983882932), 'max_cross_sectional_area_voxels': np.int64(122200)}
+- edema: {'components': np.int64(34), 'center_of_mass': (64, 109, 61551356726808, 64, 97, 45007813609888, 64, 102, 14531893734906), 'max_cross_sectional_area_voxels': np.int64(446400)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Bilateral hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(5932)}
+- edema: {'volume_mm3': np.int64(69230)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(75162)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Bilateral
+- approx_center_voxel: (64, 111, 64, 101, 64, 74)
+
+Region Summary:
+- core: {'components': np.int64(8), 'center_of_mass': (64, 119, 39345920431558, 64, 103, 1854349291976, 64, 65, 25067430883344), 'max_cross_sectional_area_voxels': np.int64(36652)}
+- edema: {'components': np.int64(10), 'center_of_mass': (64, 110, 75018055756175, 64, 100, 35748952766141, 64, 75, 18763541817131), 'max_cross_sectional_area_voxels': np.int64(278475)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Bilateral hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/095_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/095_prediction_montage.png
+94,"Patient ID: 94
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(160)}
+- edema: {'volume_mm3': np.int64(20734)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(20894)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 165, 64, 158, 64, 58)
+
+Region Summary:
+- core: {'components': np.int64(1), 'center_of_mass': (64, 165, 475, 64, 163, 4375, 64, 56, 64375), 'max_cross_sectional_area_voxels': np.int64(441)}
+- edema: {'components': np.int64(8), 'center_of_mass': (64, 164, 47506511044662, 64, 157, 40325069933442, 64, 57, 598099739558215), 'max_cross_sectional_area_voxels': np.int64(56576)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(1324)}
+- edema: {'volume_mm3': np.int64(9125)}
+- enhancing: {'volume_mm3': np.int64(26)}
+- total: {'volume_mm3': np.int64(10475)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 164, 64, 157, 64, 34)
+
+Region Summary:
+- core: {'components': np.int64(3), 'center_of_mass': (64, 165, 6034743202417, 64, 154, 72658610271904, 64, 33, 1095166163142), 'max_cross_sectional_area_voxels': np.int64(4158)}
+- edema: {'components': np.int64(1), 'center_of_mass': (64, 164, 26498630136987, 64, 156, 78586301369862, 64, 34, 5424657534247), 'max_cross_sectional_area_voxels': np.int64(27676)}
+- enhancing: {'components': np.int64(1), 'center_of_mass': (64, 170, 1153846153846, 64, 161, 3846153846154, 64, 33, 53846153846154), 'max_cross_sectional_area_voxels': np.int64(40)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/094_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/094_prediction_montage.png
+312,"Patient ID: 312
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(65330)}
+- edema: {'volume_mm3': np.int64(93209)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(158539)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Bilateral
+- approx_center_voxel: (64, 125, 64, 93, 64, 87)
+
+Region Summary:
+- core: {'components': np.int64(18), 'center_of_mass': (64, 120, 5505587019746, 64, 96, 22398591764886, 64, 85, 61943976733507), 'max_cross_sectional_area_voxels': np.int64(326370)}
+- edema: {'components': np.int64(62), 'center_of_mass': (64, 128, 39669988949564, 64, 90, 60546728320226, 64, 87, 93471660461972), 'max_cross_sectional_area_voxels': np.int64(553350)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Bilateral hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(37685)}
+- edema: {'volume_mm3': np.int64(134081)}
+- enhancing: {'volume_mm3': np.int64(10941)}
+- total: {'volume_mm3': np.int64(182707)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Bilateral
+- approx_center_voxel: (64, 125, 64, 92, 64, 65)
+
+Region Summary:
+- core: {'components': np.int64(13), 'center_of_mass': (64, 122, 43003847684756, 64, 90, 85845827252223, 64, 65, 58901419662996), 'max_cross_sectional_area_voxels': np.int64(146016)}
+- edema: {'components': np.int64(7), 'center_of_mass': (64, 124, 70364928662525, 64, 93, 49864634064484, 64, 64, 2943146307083), 'max_cross_sectional_area_voxels': np.int64(513898)}
+- enhancing: {'components': np.int64(7), 'center_of_mass': (64, 133, 90302531761265, 64, 83, 68467233342473, 64, 63, 778265240837214), 'max_cross_sectional_area_voxels': np.int64(74784)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Bilateral hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/312_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/312_prediction_montage.png
+334,"Patient ID: 334
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(1012)}
+- edema: {'volume_mm3': np.int64(138739)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(139751)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 81, 64, 139, 64, 67)
+
+Region Summary:
+- core: {'components': np.int64(167), 'center_of_mass': (64, 80, 55434782608695, 64, 144, 62450592885375, 64, 74, 85671936758894), 'max_cross_sectional_area_voxels': np.int64(4332)}
+- edema: {'components': np.int64(3), 'center_of_mass': (64, 80, 74410223513216, 64, 138, 64114632511405, 64, 66, 53833457066867), 'max_cross_sectional_area_voxels': np.int64(452920)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(4038)}
+- edema: {'volume_mm3': np.int64(8857)}
+- enhancing: {'volume_mm3': np.int64(672)}
+- total: {'volume_mm3': np.int64(13567)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 83, 64, 149, 64, 50)
+
+Region Summary:
+- core: {'components': np.int64(1), 'center_of_mass': (64, 82, 92867756315007, 64, 146, 51362060425953, 64, 49, 640663694898464), 'max_cross_sectional_area_voxels': np.int64(12096)}
+- edema: {'components': np.int64(10), 'center_of_mass': (64, 82, 36863497798352, 64, 150, 68397877385118, 64, 50, 2260359038049), 'max_cross_sectional_area_voxels': np.int64(33456)}
+- enhancing: {'components': np.int64(1), 'center_of_mass': (64, 91, 28125, 64, 144, 55803571428572, 64, 49, 25595238095238), 'max_cross_sectional_area_voxels': np.int64(2145)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/334_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/334_prediction_montage.png
+31,"Patient ID: 31
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(6619)}
+- edema: {'volume_mm3': np.int64(58882)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(65501)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 136, 64, 158, 64, 97)
+
+Region Summary:
+- core: {'components': np.int64(149), 'center_of_mass': (64, 130, 2607644659314, 64, 155, 7961927783654, 64, 95, 80722163468802), 'max_cross_sectional_area_voxels': np.int64(65360)}
+- edema: {'components': np.int64(130), 'center_of_mass': (64, 139, 21908223226, 64, 158, 45582690805338, 64, 98, 23353486634285), 'max_cross_sectional_area_voxels': np.int64(429926)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(676)}
+- edema: {'volume_mm3': np.int64(50883)}
+- enhancing: {'volume_mm3': np.int64(3324)}
+- total: {'volume_mm3': np.int64(54883)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 137, 64, 163, 64, 76)
+
+Region Summary:
+- core: {'components': np.int64(13), 'center_of_mass': (64, 133, 70710059171597, 64, 160, 71449704142012, 64, 78, 82396449704142), 'max_cross_sectional_area_voxels': np.int64(2470)}
+- edema: {'components': np.int64(4), 'center_of_mass': (64, 136, 89161409508088, 64, 162, 3529469567439, 64, 75, 70709274217322), 'max_cross_sectional_area_voxels': np.int64(175175)}
+- enhancing: {'components': np.int64(10), 'center_of_mass': (64, 134, 36522262334537, 64, 166, 38628158844764, 64, 81, 264440433213), 'max_cross_sectional_area_voxels': np.int64(11385)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/031_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/031_prediction_montage.png
+155,"Patient ID: 155
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(11829)}
+- edema: {'volume_mm3': np.int64(103461)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(115290)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 145, 64, 159, 64, 81)
+
+Region Summary:
+- core: {'components': np.int64(65), 'center_of_mass': (64, 142, 3162566573675, 64, 183, 3846478992307, 64, 62, 3660495392679), 'max_cross_sectional_area_voxels': np.int64(75240)}
+- edema: {'components': np.int64(33), 'center_of_mass': (64, 145, 69206754235896, 64, 148, 98685495017446, 64, 88, 13823566368004), 'max_cross_sectional_area_voxels': np.int64(445280)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(401)}
+- edema: {'volume_mm3': np.int64(23287)}
+- enhancing: {'volume_mm3': np.int64(579)}
+- total: {'volume_mm3': np.int64(24267)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 148, 64, 180, 64, 47)
+
+Region Summary:
+- core: {'components': np.int64(6), 'center_of_mass': (64, 143, 6733167082294, 64, 193, 498753117207, 64, 46, 38902743142145), 'max_cross_sectional_area_voxels': np.int64(770)}
+- edema: {'components': np.int64(3), 'center_of_mass': (64, 148, 18877485292222, 64, 179, 5295658521922, 64, 46, 842272512560655), 'max_cross_sectional_area_voxels': np.int64(97266)}
+- enhancing: {'components': np.int64(8), 'center_of_mass': (64, 146, 73229706390327, 64, 197, 3816925734024, 64, 48, 76511226252159), 'max_cross_sectional_area_voxels': np.int64(3211)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/155_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/155_prediction_montage.png
+65,"Patient ID: 65
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(1034)}
+- edema: {'volume_mm3': np.int64(21091)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(22125)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 161, 64, 126, 64, 68)
+
+Region Summary:
+- core: {'components': np.int64(56), 'center_of_mass': (64, 176, 26015473887816, 64, 126, 12282398452611, 64, 64, 46905222437137), 'max_cross_sectional_area_voxels': np.int64(2880)}
+- edema: {'components': np.int64(26), 'center_of_mass': (64, 158, 80498790953487, 64, 126, 54411834431748, 64, 68, 31079607415485), 'max_cross_sectional_area_voxels': np.int64(64350)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(64)}
+- edema: {'volume_mm3': np.int64(2939)}
+- enhancing: {'volume_mm3': np.int64(5845)}
+- total: {'volume_mm3': np.int64(8848)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 168, 64, 134, 64, 48)
+
+Region Summary:
+- core: {'components': np.int64(1), 'center_of_mass': (64, 172, 25, 64, 125, 5, 64, 43, 3125), 'max_cross_sectional_area_voxels': np.int64(96)}
+- edema: {'components': np.int64(26), 'center_of_mass': (64, 166, 11296359305885, 64, 150, 70261993875468, 64, 54, 72065328342974), 'max_cross_sectional_area_voxels': np.int64(7616)}
+- enhancing: {'components': np.int64(3), 'center_of_mass': (64, 168, 74525235243797, 64, 125, 62874251497006, 64, 44, 23866552609068), 'max_cross_sectional_area_voxels': np.int64(13440)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/065_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/065_prediction_montage.png
+75,"Patient ID: 75
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(80489)}
+- edema: {'volume_mm3': np.int64(69261)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(149750)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 143, 64, 99, 64, 78)
+
+Region Summary:
+- core: {'components': np.int64(512), 'center_of_mass': (64, 141, 5101318192547, 64, 102, 11282287020586, 64, 75, 51290238417673), 'max_cross_sectional_area_voxels': np.int64(253890)}
+- edema: {'components': np.int64(107), 'center_of_mass': (64, 144, 97990210941222, 64, 93, 9204747260363, 64, 82, 74333318895194), 'max_cross_sectional_area_voxels': np.int64(634030)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(1871)}
+- edema: {'volume_mm3': np.int64(74153)}
+- enhancing: {'volume_mm3': np.int64(54655)}
+- total: {'volume_mm3': np.int64(130679)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 141, 64, 102, 64, 56)
+
+Region Summary:
+- core: {'components': np.int64(40), 'center_of_mass': (64, 136, 5889898450027, 64, 103, 96098343132014, 64, 65, 63121325494389), 'max_cross_sectional_area_voxels': np.int64(10051)}
+- edema: {'components': np.int64(7), 'center_of_mass': (64, 145, 3289415128181, 64, 104, 85475975348267, 64, 58, 339487276307096), 'max_cross_sectional_area_voxels': np.int64(322660)}
+- enhancing: {'components': np.int64(5), 'center_of_mass': (64, 134, 16942640197604, 64, 98, 45520080504986, 64, 52, 17288445704876), 'max_cross_sectional_area_voxels': np.int64(145452)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/075_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/075_prediction_montage.png
+227,"Patient ID: 227
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(1167)}
+- edema: {'volume_mm3': np.int64(46780)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(47947)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 144, 64, 125, 64, 58)
+
+Region Summary:
+- core: {'components': np.int64(50), 'center_of_mass': (64, 141, 30419880034276, 64, 120, 78063410454156, 64, 53, 70179948586118), 'max_cross_sectional_area_voxels': np.int64(11088)}
+- edema: {'components': np.int64(49), 'center_of_mass': (64, 144, 80160324925183, 64, 124, 94610944848226, 64, 57, 96881145788799), 'max_cross_sectional_area_voxels': np.int64(294400)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(0)}
+- edema: {'volume_mm3': np.int64(2077)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(2077)}
+
+Presence of Classes:
+- core: False
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 136, 64, 126, 64, 34)
+
+Region Summary:
+- core: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+- edema: {'components': np.int64(7), 'center_of_mass': (64, 135, 82859894077998, 64, 126, 43620606644198, 64, 33, 997111218103036), 'max_cross_sectional_area_voxels': np.int64(6292)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: nan
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/227_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/227_prediction_montage.png
+73,"Patient ID: 73
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(7469)}
+- edema: {'volume_mm3': np.int64(27590)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(35059)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 153, 64, 148, 64, 86)
+
+Region Summary:
+- core: {'components': np.int64(39), 'center_of_mass': (64, 156, 71790065604497, 64, 147, 5845494711474, 64, 81, 81871736510912), 'max_cross_sectional_area_voxels': np.int64(16675)}
+- edema: {'components': np.int64(44), 'center_of_mass': (64, 152, 39021384559624, 64, 148, 79739035883, 64, 88, 58278361725263), 'max_cross_sectional_area_voxels': np.int64(156468)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(424)}
+- edema: {'volume_mm3': np.int64(19022)}
+- enhancing: {'volume_mm3': np.int64(10940)}
+- total: {'volume_mm3': np.int64(30386)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 156, 64, 149, 64, 61)
+
+Region Summary:
+- core: {'components': np.int64(6), 'center_of_mass': (64, 149, 79481132075472, 64, 155, 3938679245283, 64, 63, 306603773584904), 'max_cross_sectional_area_voxels': np.int64(2145)}
+- edema: {'components': np.int64(8), 'center_of_mass': (64, 155, 38045421091368, 64, 149, 61944064767113, 64, 60, 912890337503946), 'max_cross_sectional_area_voxels': np.int64(58800)}
+- enhancing: {'components': np.int64(3), 'center_of_mass': (64, 158, 3563071297989, 64, 147, 89332723948812, 64, 60, 60164533820841), 'max_cross_sectional_area_voxels': np.int64(25806)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/073_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/073_prediction_montage.png
+109,"Patient ID: 109
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(6272)}
+- edema: {'volume_mm3': np.int64(72599)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(78871)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 142, 64, 104, 64, 82)
+
+Region Summary:
+- core: {'components': np.int64(61), 'center_of_mass': (64, 142, 19722576530611, 64, 101, 30133928571429, 64, 72, 40353954081633), 'max_cross_sectional_area_voxels': np.int64(31248)}
+- edema: {'components': np.int64(60), 'center_of_mass': (64, 141, 35489469551922, 64, 105, 99692833234617, 64, 86, 25133955013155), 'max_cross_sectional_area_voxels': np.int64(526176)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(17861)}
+- edema: {'volume_mm3': np.int64(31192)}
+- enhancing: {'volume_mm3': np.int64(1412)}
+- total: {'volume_mm3': np.int64(50465)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 140, 64, 102, 64, 51)
+
+Region Summary:
+- core: {'components': np.int64(6), 'center_of_mass': (64, 132, 1448407144057, 64, 102, 93303846369184, 64, 55, 5441464643637), 'max_cross_sectional_area_voxels': np.int64(110200)}
+- edema: {'components': np.int64(12), 'center_of_mass': (64, 143, 92690433444474, 64, 101, 59976917158245, 64, 48, 54350474480636), 'max_cross_sectional_area_voxels': np.int64(147852)}
+- enhancing: {'components': np.int64(22), 'center_of_mass': (64, 146, 1628895184135, 64, 102, 72308781869688, 64, 55, 8498583569406), 'max_cross_sectional_area_voxels': np.int64(10920)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/109_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/109_prediction_montage.png
+58,"Patient ID: 58
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(10482)}
+- edema: {'volume_mm3': np.int64(74456)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(84938)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 153, 64, 136, 64, 65)
+
+Region Summary:
+- core: {'components': np.int64(7), 'center_of_mass': (64, 149, 5848120587674, 64, 154, 1335622972715, 64, 74, 76559816828849), 'max_cross_sectional_area_voxels': np.int64(28458)}
+- edema: {'components': np.int64(68), 'center_of_mass': (64, 152, 8486757279467, 64, 131, 91572203717632, 64, 62, 24914043193295), 'max_cross_sectional_area_voxels': np.int64(448900)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(30)}
+- edema: {'volume_mm3': np.int64(13544)}
+- enhancing: {'volume_mm3': np.int64(6)}
+- total: {'volume_mm3': np.int64(13580)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 157, 64, 156, 64, 57)
+
+Region Summary:
+- core: {'components': np.int64(1), 'center_of_mass': (64, 157, 3333333333333, 64, 146, 26666666666668, 64, 60, 0), 'max_cross_sectional_area_voxels': np.int64(56)}
+- edema: {'components': np.int64(5), 'center_of_mass': (64, 157, 379651506202, 64, 155, 76498818665092, 64, 57, 3300354400473), 'max_cross_sectional_area_voxels': np.int64(98600)}
+- enhancing: {'components': np.int64(2), 'center_of_mass': (64, 156, 0, 64, 147, 16666666666666, 64, 60, 0), 'max_cross_sectional_area_voxels': np.int64(4)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/058_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/058_prediction_montage.png
+76,"Patient ID: 76
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(8432)}
+- edema: {'volume_mm3': np.int64(23177)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(31609)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 100, 64, 164, 64, 96)
+
+Region Summary:
+- core: {'components': np.int64(181), 'center_of_mass': (64, 103, 26138519924099, 64, 167, 897770398482, 64, 95, 89314516129032), 'max_cross_sectional_area_voxels': np.int64(34510)}
+- edema: {'components': np.int64(27), 'center_of_mass': (64, 96, 72843767528153, 64, 162, 28282348880356, 64, 96, 56413685981792), 'max_cross_sectional_area_voxels': np.int64(96096)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(4)}
+- edema: {'volume_mm3': np.int64(25265)}
+- enhancing: {'volume_mm3': np.int64(282)}
+- total: {'volume_mm3': np.int64(25551)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 103, 64, 168, 64, 77)
+
+Region Summary:
+- core: {'components': np.int64(1), 'center_of_mass': (64, 98, 5, 64, 165, 5, 64, 74, 0), 'max_cross_sectional_area_voxels': np.int64(4)}
+- edema: {'components': np.int64(8), 'center_of_mass': (64, 103, 23368296061746, 64, 168, 38678013061548, 64, 76, 96584207401544), 'max_cross_sectional_area_voxels': np.int64(53909)}
+- enhancing: {'components': np.int64(5), 'center_of_mass': (64, 99, 22340425531915, 64, 171, 86524822695034, 64, 75, 5673758865248), 'max_cross_sectional_area_voxels': np.int64(576)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/076_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/076_prediction_montage.png
+280,"Patient ID: 280
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(135)}
+- edema: {'volume_mm3': np.int64(38411)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(38546)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 159, 64, 110, 64, 84)
+
+Region Summary:
+- core: {'components': np.int64(10), 'center_of_mass': (64, 162, 17037037037036, 64, 114, 81481481481481, 64, 92, 1037037037037), 'max_cross_sectional_area_voxels': np.int64(720)}
+- edema: {'components': np.int64(4), 'center_of_mass': (64, 158, 98401499570434, 64, 110, 21847908151311, 64, 83, 54013173309728), 'max_cross_sectional_area_voxels': np.int64(105600)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(0)}
+- edema: {'volume_mm3': np.int64(4608)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(4608)}
+
+Presence of Classes:
+- core: False
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 155, 64, 110, 64, 61)
+
+Region Summary:
+- core: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+- edema: {'components': np.int64(5), 'center_of_mass': (64, 154, 71853298611111, 64, 109, 80685763888889, 64, 60, 550998263888886), 'max_cross_sectional_area_voxels': np.int64(19152)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: nan
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/280_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/280_prediction_montage.png
+110,"Patient ID: 110
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(86)}
+- edema: {'volume_mm3': np.int64(12890)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(12976)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 135, 64, 140, 64, 114)
+
+Region Summary:
+- core: {'components': np.int64(13), 'center_of_mass': (64, 137, 46511627906978, 64, 148, 8953488372093, 64, 126, 46511627906976), 'max_cross_sectional_area_voxels': np.int64(160)}
+- edema: {'components': np.int64(15), 'center_of_mass': (64, 134, 15733126454617, 64, 137, 78510473235065, 64, 111, 13607447633825), 'max_cross_sectional_area_voxels': np.int64(42228)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(0)}
+- edema: {'volume_mm3': np.int64(1532)}
+- enhancing: {'volume_mm3': np.int64(4)}
+- total: {'volume_mm3': np.int64(1536)}
+
+Presence of Classes:
+- core: False
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Bilateral
+- approx_center_voxel: (64, 112, 64, 147, 64, 24)
+
+Region Summary:
+- core: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+- edema: {'components': np.int64(7), 'center_of_mass': (64, 111, 66253263707571, 64, 146, 99934725848564, 64, 23, 62793733681462), 'max_cross_sectional_area_voxels': np.int64(2652)}
+- enhancing: {'components': np.int64(1), 'center_of_mass': (64, 150, 5, 64, 115, 5, 64, 8, 0), 'max_cross_sectional_area_voxels': np.int64(4)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: nan
+- laterality: Bilateral hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/110_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/110_prediction_montage.png
+112,"Patient ID: 112
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(20290)}
+- edema: {'volume_mm3': np.int64(101897)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(122187)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 80, 64, 130, 64, 67)
+
+Region Summary:
+- core: {'components': np.int64(84), 'center_of_mass': (64, 67, 28161655988171, 64, 130, 94351897486447, 64, 58, 78644652538196), 'max_cross_sectional_area_voxels': np.int64(89503)}
+- edema: {'components': np.int64(66), 'center_of_mass': (64, 87, 32212920890703, 64, 128, 5626073387833, 64, 70, 7909752004475), 'max_cross_sectional_area_voxels': np.int64(613988)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(59258)}
+- edema: {'volume_mm3': np.int64(56968)}
+- enhancing: {'volume_mm3': np.int64(9372)}
+- total: {'volume_mm3': np.int64(125598)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 77, 64, 134, 64, 47)
+
+Region Summary:
+- core: {'components': np.int64(8), 'center_of_mass': (64, 76, 20245367714064, 64, 129, 3414053798643, 64, 45, 17477808903439), 'max_cross_sectional_area_voxels': np.int64(216920)}
+- edema: {'components': np.int64(31), 'center_of_mass': (64, 77, 86374806909141, 64, 140, 17623929223424, 64, 49, 66342508074709), 'max_cross_sectional_area_voxels': np.int64(416392)}
+- enhancing: {'components': np.int64(23), 'center_of_mass': (64, 77, 14265898420828, 64, 129, 22044387537346, 64, 38, 671895006402046), 'max_cross_sectional_area_voxels': np.int64(67716)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/112_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/112_prediction_montage.png
+349,"Patient ID: 349
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(48271)}
+- edema: {'volume_mm3': np.int64(66713)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(114984)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 99, 64, 86, 64, 91)
+
+Region Summary:
+- core: {'components': np.int64(10), 'center_of_mass': (64, 98, 2812040355493, 64, 86, 80704770980506, 64, 89, 37652006380642), 'max_cross_sectional_area_voxels': np.int64(142100)}
+- edema: {'components': np.int64(73), 'center_of_mass': (64, 100, 37929638900964, 64, 93, 1628917902058, 64, 93, 82949350201609), 'max_cross_sectional_area_voxels': np.int64(506760)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(98845)}
+- edema: {'volume_mm3': np.int64(79582)}
+- enhancing: {'volume_mm3': np.int64(10665)}
+- total: {'volume_mm3': np.int64(189092)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 102, 64, 89, 64, 68)
+
+Region Summary:
+- core: {'components': np.int64(6), 'center_of_mass': (64, 98, 11722393646619, 64, 83, 75024533360312, 64, 69, 3650159340381), 'max_cross_sectional_area_voxels': np.int64(329130)}
+- edema: {'components': np.int64(64), 'center_of_mass': (64, 107, 9499635595989, 64, 95, 60974843557588, 64, 65, 91123620919304), 'max_cross_sectional_area_voxels': np.int64(457083)}
+- enhancing: {'components': np.int64(64), 'center_of_mass': (64, 103, 61143928738865, 64, 79, 62137834036568, 64, 71, 5117674636662), 'max_cross_sectional_area_voxels': np.int64(231168)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/349_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/349_prediction_montage.png
+127,"Patient ID: 127
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(156)}
+- edema: {'volume_mm3': np.int64(37208)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(37364)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 160, 64, 163, 64, 63)
+
+Region Summary:
+- core: {'components': np.int64(14), 'center_of_mass': (64, 172, 25, 64, 166, 46794871794873, 64, 66, 6474358974359), 'max_cross_sectional_area_voxels': np.int64(294)}
+- edema: {'components': np.int64(5), 'center_of_mass': (64, 159, 60234358202538, 64, 162, 6963556224468, 64, 63, 1197591915717), 'max_cross_sectional_area_voxels': np.int64(133380)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(17497)}
+- edema: {'volume_mm3': np.int64(13245)}
+- enhancing: {'volume_mm3': np.int64(6939)}
+- total: {'volume_mm3': np.int64(37681)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 159, 64, 163, 64, 42)
+
+Region Summary:
+- core: {'components': np.int64(4), 'center_of_mass': (64, 157, 5306052466137, 64, 161, 86700577241814, 64, 40, 236383380008), 'max_cross_sectional_area_voxels': np.int64(107100)}
+- edema: {'components': np.int64(11), 'center_of_mass': (64, 159, 28342770856926, 64, 162, 67157417893546, 64, 42, 15477538693847), 'max_cross_sectional_area_voxels': np.int64(133632)}
+- enhancing: {'components': np.int64(15), 'center_of_mass': (64, 162, 9626747369938, 64, 164, 42484507854158, 64, 43, 56247297881539), 'max_cross_sectional_area_voxels': np.int64(22320)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/127_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/127_prediction_montage.png
+358,"Patient ID: 358
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(3174)}
+- edema: {'volume_mm3': np.int64(92292)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(95466)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 82, 64, 141, 64, 72)
+
+Region Summary:
+- core: {'components': np.int64(69), 'center_of_mass': (64, 67, 82766225582861, 64, 144, 50913673597984, 64, 62, 412728418399496), 'max_cross_sectional_area_voxels': np.int64(14950)}
+- edema: {'components': np.int64(15), 'center_of_mass': (64, 83, 55679798899146, 64, 140, 28702379404498, 64, 73, 3057578121614), 'max_cross_sectional_area_voxels': np.int64(449046)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(0)}
+- edema: {'volume_mm3': np.int64(16351)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(16351)}
+
+Presence of Classes:
+- core: False
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 73, 64, 148, 64, 43)
+
+Region Summary:
+- core: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+- edema: {'components': np.int64(4), 'center_of_mass': (64, 72, 54736713350866, 64, 148, 29184759341936, 64, 42, 78943183903125), 'max_cross_sectional_area_voxels': np.int64(51480)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: nan
+- laterality: Left hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/358_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/358_prediction_montage.png
+343,"Patient ID: 343
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(28032)}
+- edema: {'volume_mm3': np.int64(96204)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(124236)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 80, 64, 139, 64, 65)
+
+Region Summary:
+- core: {'components': np.int64(188), 'center_of_mass': (64, 77, 4794877283105, 64, 142, 24818065068493, 64, 63, 7987300228311), 'max_cross_sectional_area_voxels': np.int64(71440)}
+- edema: {'components': np.int64(17), 'center_of_mass': (64, 80, 28542472246477, 64, 137, 1906677477028, 64, 65, 396948151844), 'max_cross_sectional_area_voxels': np.int64(430140)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(8631)}
+- edema: {'volume_mm3': np.int64(50)}
+- enhancing: {'volume_mm3': np.int64(147472)}
+- total: {'volume_mm3': np.int64(156153)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Left
+- approx_center_voxel: (64, 80, 64, 140, 64, 43)
+
+Region Summary:
+- core: {'components': np.int64(55), 'center_of_mass': (64, 73, 25501100683583, 64, 141, 57015409570155, 64, 46, 89584057467269), 'max_cross_sectional_area_voxels': np.int64(25500)}
+- edema: {'components': np.int64(2), 'center_of_mass': (64, 88, 74, 64, 161, 38, 64, 23, 5), 'max_cross_sectional_area_voxels': np.int64(238)}
+- enhancing: {'components': np.int64(1), 'center_of_mass': (64, 80, 44218563523923, 64, 140, 32044049039817, 64, 42, 68028507106434), 'max_cross_sectional_area_voxels': np.int64(343980)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Left hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/343_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/343_prediction_montage.png
+83,"Patient ID: 83
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(3391)}
+- edema: {'volume_mm3': np.int64(63100)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(66491)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 155, 64, 145, 64, 65)
+
+Region Summary:
+- core: {'components': np.int64(122), 'center_of_mass': (64, 149, 24800943674433, 64, 154, 62872309053375, 64, 65, 72427012680625), 'max_cross_sectional_area_voxels': np.int64(16128)}
+- edema: {'components': np.int64(10), 'center_of_mass': (64, 155, 78614896988907, 64, 143, 9666877971474, 64, 65, 30488114104595), 'max_cross_sectional_area_voxels': np.int64(267180)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(953)}
+- edema: {'volume_mm3': np.int64(35758)}
+- enhancing: {'volume_mm3': np.int64(14326)}
+- total: {'volume_mm3': np.int64(51037)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 155, 64, 148, 64, 45)
+
+Region Summary:
+- core: {'components': np.int64(22), 'center_of_mass': (64, 152, 401888772298, 64, 150, 67995802728225, 64, 42, 68310598111228), 'max_cross_sectional_area_voxels': np.int64(3036)}
+- edema: {'components': np.int64(2), 'center_of_mass': (64, 154, 48042396107164, 64, 149, 23857598299682, 64, 46, 88584372727781), 'max_cross_sectional_area_voxels': np.int64(159616)}
+- enhancing: {'components': np.int64(3), 'center_of_mass': (64, 156, 27935222672065, 64, 144, 98240960491415, 64, 39, 37253943878263), 'max_cross_sectional_area_voxels': np.int64(56588)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/083_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/083_prediction_montage.png
+195,"Patient ID: 195
+
+== GROUND TRUTH SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(11141)}
+- edema: {'volume_mm3': np.int64(18410)}
+- enhancing: {'volume_mm3': np.int64(0)}
+- total: {'volume_mm3': np.int64(29551)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: False
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 156, 64, 112, 64, 47)
+
+Region Summary:
+- core: {'components': np.int64(49), 'center_of_mass': (64, 150, 3707925679921, 64, 108, 42572480028723, 64, 45, 56772282559914), 'max_cross_sectional_area_voxels': np.int64(37323)}
+- edema: {'components': np.int64(93), 'center_of_mass': (64, 163, 6692558392178, 64, 120, 50787615426398, 64, 50, 14117327539381), 'max_cross_sectional_area_voxels': np.int64(113400)}
+- enhancing: {'components': np.int64(0), 'center_of_mass': (), 'max_cross_sectional_area_voxels': np.int64(0)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: nan
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+== PREDICTED SEGMENTATION ==
+Tumor Volumes:
+- core: {'volume_mm3': np.int64(52)}
+- edema: {'volume_mm3': np.int64(32250)}
+- enhancing: {'volume_mm3': np.int64(4)}
+- total: {'volume_mm3': np.int64(32306)}
+
+Presence of Classes:
+- core: True
+- edema: True
+- enhancing: True
+
+Anatomical Location:
+- hemisphere: Right
+- approx_center_voxel: (64, 155, 64, 114, 64, 25)
+
+Region Summary:
+- core: {'components': np.int64(2), 'center_of_mass': (64, 161, 3846153846154, 64, 119, 6923076923077, 64, 23, 153846153846153), 'max_cross_sectional_area_voxels': np.int64(40)}
+- edema: {'components': np.int64(2), 'center_of_mass': (64, 154, 9491472868217, 64, 113, 54548837209302, 64, 24, 776), 'max_cross_sectional_area_voxels': np.int64(100800)}
+- enhancing: {'components': np.int64(1), 'center_of_mass': (64, 147, 5, 64, 111, 5, 64, 9, 0), 'max_cross_sectional_area_voxels': np.int64(4)}
+
+Radiological Features:
+- mass_effect: Possible mass effect due to large edema
+- contrast_enhancement: Enhancing regions observed (suggests active tumor)
+- irregularity: Non-enhancing core present, possibly necrotic
+- laterality: Right hemisphere involvement
+
+Attached are the 3D reconstructions (flattened montage) of both the ground truth and predicted segmentations.
+
+Please write a detailed clinical report as if you are preparing a case summary for a multidisciplinary team (radiologist, oncologist, and neurologist). The report should include:
+1. An overview of the tumor including anatomical location and laterality, approximate center of mass and volume distribution and morphological characteristics.
+2. Tumor class description including the core/non-enhancing, edema and enhancing tumor regions.
+3. CLinical interpretation including possible diagnosis based on segmentation patterns and potential treatment options
+4. Prognostic insight included estimated survival probabilities or literature-based prognosis related to the tumor presentation
+5. Literatures that may aid in tumor diagnosis and patient treatment
+6. Recommended next steps including further imaging or biopsy needs and interventions based on segmentation.
+
+Write this as a structured medical report that would be shared in a tumore board review. Assume this is one of multiple patients being reviewed for surgical planning or oncological intervention.",/content/drive/MyDrive/AUNet/Montages/195_t1ce_montage.png,/content/drive/MyDrive/AUNet/Montages/195_prediction_montage.png
