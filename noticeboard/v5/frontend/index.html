@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoticeBoardTracker</title>
+    <script>
+      // Apply the saved theme before anything paints, so a dark-mode user never sees a white flash.
+      // No saved choice yet? Follow the operating system. (AppThemeContext takes over after this.)
+      try {
+        const saved = localStorage.getItem("noticeboard.theme");
+        const dark = saved ? saved === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+      } catch {}
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+"""SQLAlchemy tables. One class per read model in app/schemas.py, same column names.
+
+Value rules (roles, statuses, priorities) are enforced by the Pydantic Literal types, so
+the columns are plain strings: no Postgres ENUM types, CHECK constraints or triggers.
+"""
+
+from datetime import date, datetime
+from typing import ClassVar
+
+from sqlalchemy import Date, DateTime, ForeignKey, MetaData, Sequence, String, Text
+from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
+
+# Predictable constraint names, so later migrations can refer to (and drop) them by name.
+NAMING_CONVENTION = {
+    "ix": "ix_%(column_0_label)s",
+    "uq": "uq_%(table_name)s_%(column_0_name)s",
+    "fk": "fk_%(table_name)s_%(column_0_name)s_%(referred_table_name)s",
+    "pk": "pk_%(table_name)s",
+}
+
+
+class Base(DeclarativeBase):
+    metadata = MetaData(naming_convention=NAMING_CONVENTION)
+
+
+# IDs keep v1's format ("c1", "u13") so the API contract doesn't change. Each table gets its
+# numbers from its own Postgres sequence (see repositories/ids.py), which never hands out the
+# same number twice, even to concurrent requests.
+
+
+class Cohort(Base):
+    __tablename__ = "cohorts"
+    id_prefix: ClassVar[str] = "c"
+    id_seq: ClassVar[Sequence] = Sequence("cohorts_id_seq", metadata=Base.metadata)
+
+    id: Mapped[str] = mapped_column(String(20), primary_key=True)
+    name: Mapped[str] = mapped_column(String(100))
+    track_type: Mapped[str] = mapped_column(String(10))
+    start_date: Mapped[date] = mapped_column(Date)
+
+
+class User(Base):
+    __tablename__ = "users"
+    id_prefix: ClassVar[str] = "u"
+    id_seq: ClassVar[Sequence] = Sequence("users_id_seq", metadata=Base.metadata)
+
+    id: Mapped[str] = mapped_column(String(20), primary_key=True)
+    name: Mapped[str] = mapped_column(String(100))
+    email: Mapped[str] = mapped_column(String(254), unique=True, index=True)  # stored lowercase
+    role: Mapped[str] = mapped_column(String(10))
+    cohort_id: Mapped[str | None] = mapped_column(ForeignKey("cohorts.id"), index=True)
+
+
+class Notice(Base):
+    __tablename__ = "notices"
+    id_prefix: ClassVar[str] = "n"
+    id_seq: ClassVar[Sequence] = Sequence("notices_id_seq", metadata=Base.metadata)
+
+    id: Mapped[str] = mapped_column(String(20), primary_key=True)
+    title: Mapped[str] = mapped_column(String(200))
+    body: Mapped[str] = mapped_column(Text)
+    priority: Mapped[str] = mapped_column(String(10))
+    target_cohort_id: Mapped[str | None] = mapped_column(ForeignKey("cohorts.id"), index=True)  # null = everyone
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+
+
+class NoticeRead(Base):
+    __tablename__ = "notice_reads"
+
+    # Composite primary key: at most one read receipt per trainee per notice.
+    notice_id: Mapped[str] = mapped_column(ForeignKey("notices.id"), primary_key=True)
+    trainee_id: Mapped[str] = mapped_column(ForeignKey("users.id"), primary_key=True)
+    read_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+
+
+class Submission(Base):
+    __tablename__ = "submissions"
+    id_prefix: ClassVar[str] = "s"
+    id_seq: ClassVar[Sequence] = Sequence("submissions_id_seq", metadata=Base.metadata)
+
+    id: Mapped[str] = mapped_column(String(20), primary_key=True)
+    trainee_id: Mapped[str] = mapped_column(ForeignKey("users.id"), index=True)
+    milestone_name: Mapped[str] = mapped_column(String(200))
+    status: Mapped[str] = mapped_column(String(20))
+    asset_url: Mapped[str | None] = mapped_column(Text)
+    notes: Mapped[str | None] = mapped_column(Text)
+    submitted_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))

@@ -1,0 +1,22 @@
+name: noticeboard-v3
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: noticeboard-v3-db
+    environment:
+      POSTGRES_USER: noticeboard
+      POSTGRES_PASSWORD: noticeboard
+      POSTGRES_DB: noticeboard
+    ports:
+      - "5434:5432"   # v2 uses 5433 and the old MVP 5432, so v3 gets its own port and data
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U noticeboard -d noticeboard"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pgdata:

@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/*
+ * Hero animation (components/HeroLoop.jsx). Every piece runs on the same 9 s loop, so the
+ * percentages below line up into one story:
+ *    0-8%   notice slides in
+ *   14-34%  cursor glides to "Acknowledge" and clicks; the button turns green
+ *   40-48%  progress report slides in
+ *   52-62%  progress bar fills
+ *   64-70%  status pill flips to "On track"
+ *   92-100% everything fades, then it starts again
+ * The base (non-animated) styles are the finished state, which is what reduced-motion users see.
+ */
+.hero-loop {
+  --hero-loop: 9s;
+}
+
+.hero-notice { animation: hero-notice var(--hero-loop) ease-out infinite; }
+.hero-cursor { opacity: 0; animation: hero-cursor var(--hero-loop) ease-in-out infinite; }
+.hero-ack-before { opacity: 0; animation: hero-ack-before var(--hero-loop) linear infinite; }
+.hero-ack-after { animation: hero-ack-after var(--hero-loop) linear infinite; }
+.hero-report { animation: hero-report var(--hero-loop) ease-out infinite; }
+.hero-progress { width: 80%; animation: hero-progress var(--hero-loop) ease-in-out infinite; }
+.hero-pill-before { opacity: 0; animation: hero-pill-before var(--hero-loop) linear infinite; }
+.hero-pill-after { animation: hero-pill-after var(--hero-loop) ease-out infinite; }
+.hero-bob { animation: hero-bob 3s ease-in-out infinite alternate; }
+.hero-bob-slow { animation-duration: 4s; }
+.hero-twinkle { animation: hero-twinkle 2.5s ease-in-out infinite alternate; }
+
+@keyframes hero-notice {
+  0% { opacity: 0; transform: translateY(-14px); }
+  8%, 92% { opacity: 1; transform: none; }
+  100% { opacity: 0; }
+}
+@keyframes hero-cursor {
+  0%, 12% { opacity: 0; transform: translate(90px, 70px); }
+  16% { opacity: 1; transform: translate(90px, 70px); }
+  28% { transform: translate(0, 0); }
+  31% { transform: translate(0, 0) scale(0.8); }
+  34% { opacity: 1; transform: translate(0, 0) scale(1); }
+  44%, 100% { opacity: 0; transform: translate(0, 0); }
+}
+@keyframes hero-ack-before {
+  0%, 31% { opacity: 1; }
+  33%, 100% { opacity: 0; }
+}
+@keyframes hero-ack-after {
+  0%, 31% { opacity: 0; transform: scale(0.9); }
+  34% { opacity: 1; transform: scale(1.06); }
+  37%, 92% { opacity: 1; transform: none; }
+  100% { opacity: 0; }
+}
+@keyframes hero-report {
+  0%, 40% { opacity: 0; transform: translateY(16px); }
+  48%, 92% { opacity: 1; transform: none; }
+  100% { opacity: 0; }
+}
+@keyframes hero-progress {
+  0%, 52% { width: 30%; }
+  62%, 100% { width: 80%; }
+}
+@keyframes hero-pill-before {
+  0%, 64% { opacity: 1; }
+  67%, 100% { opacity: 0; }
+}
+@keyframes hero-pill-after {
+  0%, 64% { opacity: 0; transform: scale(0.8); }
+  67% { opacity: 1; transform: scale(1.12); }
+  70%, 92% { opacity: 1; transform: none; }
+  100% { opacity: 0; }
+}
+@keyframes hero-bob {
+  from { transform: translateY(0); }
+  to { transform: translateY(-8px); }
+}
+@keyframes hero-twinkle {
+  from { opacity: 0.35; transform: scale(0.85) rotate(0deg); }
+  to { opacity: 1; transform: scale(1.1) rotate(15deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-loop,
+  .hero-loop * {
+    animation: none !important;
+  }
+}

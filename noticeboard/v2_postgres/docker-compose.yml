@@ -1,0 +1,22 @@
+name: noticeboard-v2
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: noticeboard-v2-db
+    environment:
+      POSTGRES_USER: noticeboard
+      POSTGRES_PASSWORD: noticeboard
+      POSTGRES_DB: noticeboard
+    ports:
+      - "5433:5432"   # host 5433, so it can't clash with another Postgres on the default 5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U noticeboard -d noticeboard"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pgdata:

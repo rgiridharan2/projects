@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import "./theme-dark.css";
+
+/*
+ * Dark mode, class strategy: dark: utilities apply when an ancestor (here <html>) has class="dark".
+ * This line is Tailwind v4's equivalent of v3's `darkMode: "class"` in tailwind.config.js; v4 moved
+ * configuration into CSS, so there's no config file.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Card and panel background. White in light mode; theme-dark.css turns it navy. */
+  --color-surface: #ffffff;
+}
+
+/* ---------------------------------------------------------------------------------------------
+ * Hero showcase (components/HeroShowcase.jsx). Each frame's scene is remounted when it becomes
+ * active, so these one-shot animations replay on every visit. The base (non-animated) styles are
+ * each frame's finished state, which is what people who prefer reduced motion see.
+ * ------------------------------------------------------------------------------------------- */
+.hero-frame { animation: hero-frame-in 0.45s ease-out both; }
+.hero-pop { animation: hero-pop 0.5s ease-out both; }
+.hero-late { animation: hero-fade 0.4s ease-out 2.6s both; }
+.hero-tick { animation: hero-fade 0.4s ease-out both; }
+.hero-dot-timer { animation: hero-dot-timer 5s linear both; }
+
+/* frame 1: cursor glides to the button, clicks, the button turns green */
+.hero-cursor { opacity: 0; animation: hero-cursor 2.4s ease-in-out 0.4s both; }
+.hero-ack-before { opacity: 0; animation: hero-hide 0.2s linear 1.75s both; }
+.hero-ack-after { animation: hero-ack 0.4s ease-out 1.75s both; }
+
+/* frame 2: bar fills 30% -> 100%, the label counts, the pill flips */
+.hero-fill { width: 100%; animation: hero-fill 2.2s ease-in-out 0.3s both; }
+.hero-percent::after { content: "100%"; animation: hero-percent 2.2s steps(1) 0.3s both; }
+.hero-pill-before { opacity: 0; animation: hero-hide 0.2s linear 2.5s both; }
+.hero-pill-after { animation: hero-ack 0.4s ease-out 2.5s both; }
+
+/* frame 3: avatars pop in one by one, the health ring draws to 86% */
+.hero-avatar { animation: hero-pop 0.35s ease-out both; }
+.hero-ring { stroke-dasharray: 86 100; animation: hero-ring 1.6s ease-out 0.3s both; }
+.hero-ring-label { animation: hero-fade 0.4s ease-out 1.4s both; }
+
+@keyframes hero-frame-in {
+  from { opacity: 0; transform: translateX(16px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes hero-pop {
+  from { opacity: 0; transform: scale(0.92) translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes hero-fade {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes hero-cursor {
+  0% { opacity: 0; transform: translate(80px, 60px); }
+  20% { opacity: 1; transform: translate(80px, 60px); }
+  55% { transform: translate(0, 0); }
+  62% { transform: translate(0, 0) scale(0.8); }
+  70% { opacity: 1; transform: translate(0, 0) scale(1); }
+  100% { opacity: 0; transform: translate(0, 0); }
+}
+@keyframes hero-hide {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes hero-ack {
+  0% { opacity: 0; transform: scale(0.85); }
+  60% { opacity: 1; transform: scale(1.08); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes hero-fill {
+  from { width: 30%; }
+  to { width: 100%; }
+}
+@keyframes hero-percent {
+  0% { content: "30%"; }
+  25% { content: "48%"; }
+  50% { content: "71%"; }
+  75% { content: "89%"; }
+  100% { content: "100%"; }
+}
+@keyframes hero-ring {
+  from { stroke-dasharray: 0 100; }
+  to { stroke-dasharray: 86 100; }
+}
+@keyframes hero-dot-timer {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+/* Toasts (components/NoticeTicker.jsx) and the activity drawer slide in from the right. */
+.slide-in-right { animation: slide-in-right 0.25s ease-out both; }
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(24px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

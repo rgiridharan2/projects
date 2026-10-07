@@ -1,0 +1,22 @@
+name: noticeboard-v5
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: noticeboard-v5-db
+    environment:
+      POSTGRES_USER: noticeboard
+      POSTGRES_PASSWORD: noticeboard
+      POSTGRES_DB: noticeboard
+    ports:
+      - "5437:5432"   # 5432-5436 belong to earlier versions; v5 gets its own port and data
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U noticeboard -d noticeboard"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pgdata:
